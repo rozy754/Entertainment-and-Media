@@ -1,0 +1,33 @@
+/*.container{
+ background-color: cornsilk;
+}
+.btn{
+    background-color: pink;
+}*/
+/* #rozy{
+    margin-left: 100px;
+} */
+
+.container{
+    margin-left: 50px;
+}
+#Login{
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+*{
+    background-color: red;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+

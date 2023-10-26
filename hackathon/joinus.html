@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .plans-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .plan {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .plan h2 {
+            color: #007bff;
+        }
+
+        .plan p {
+            font-size: 1.2rem;
+        }
+
+        .plan button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .plan button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<title>Get Started</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .get-started-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .get-started-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .get-started-description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .get-started-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .get-started-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="plans-container">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <p>Rs.0/month</p>
+            <p>Access to basic features</p>
+            <button>Get started for free</button>
+        </div>
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <p>Rs.50/month</p>
+            <p>Access to premium features</p>
+            <button>Get started</button>
+        </div>
+        <div class="plan">
+            <h2>Pro Plan</h2>
+            <p>Rs.80/month</p>
+            <p>Access to all features</p>
+            <button>Get started</button>
+        </div>
+        </div>
+   
+    <script>
+        const form = document.getElementById("contact-form");
+        const responseDiv = document.getElementById("response");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            responseDiv.innerHTML = "Submitting...";
+
+            const formData = new FormData(form);
+            const response = await fetch("your_backend_endpoint_here", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                responseDiv.innerHTML = "Message sent successfully!";
+                form.reset();
+            } else {
+                responseDiv.innerHTML = "Error sending message. Please try again later.";
+            }
+        });
+    </script>
+</body>
+</html>
